@@ -1,8 +1,10 @@
 package main;
 
+import io.github.bonigarcia.wdm.WebDriverManager;
 import org.junit.rules.ExternalResource;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+
 import java.time.Duration;
 
 public class BrowserRule extends ExternalResource {
@@ -14,7 +16,7 @@ public class BrowserRule extends ExternalResource {
 
     @Override
     protected void before() throws Throwable {
-        System.setProperty("webdriver.chrome.driver", "/Users/karina/Desktop/JavaTests/chromedriver");
+        WebDriverManager.chromedriver().setup();
         driver = new ChromeDriver();
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
     }
