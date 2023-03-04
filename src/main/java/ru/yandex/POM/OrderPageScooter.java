@@ -16,7 +16,7 @@ public class OrderPageScooter {
     private By phoneField = By.xpath(".//input[@placeholder='* Телефон: на него позвонит курьер']"); //Поле ввода телефона
     private By nextButton = By.xpath(".//button[@class='Button_Button__ra12g Button_Middle__1CSJM']"); //Кнопка Далее
     private By dateField = By.xpath(".//input[@placeholder='* Когда привезти самокат']"); //Поле выбора даты доставки самоката
-    private By dateTwo = By.xpath(".//div[@class='react-datepicker__week']/div[@aria-label='Choose вторник, 1-е ноября 2022 г.']"); //Поле выбора даты
+    private By dateTwo = By.xpath(".//div[@class='react-datepicker__week']/div[@aria-label='Choose пятница, 10-е марта 2023 г.']"); //Поле выбора даты
     private By timeField = By.className("Dropdown-control"); //Поле выбора времени
     private By timeTwo = By.xpath(".//div[@class='Dropdown-menu']/div[3]"); //Поле выбора времени для теста
     private By colourBlack = By.id("black"); //Поле выбора цвета, чёрный
